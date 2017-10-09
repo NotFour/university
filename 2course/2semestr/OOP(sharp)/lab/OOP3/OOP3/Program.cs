@@ -97,6 +97,24 @@ namespace OOP3
             return check;
         }
 
+        public static void additionalTask()
+        { 
+            const int elements = 100000;
+            Queue<Enterprise> testQueue = new Queue<Enterprise>();
+            Enterprise[] testArray = new Enterprise[100000];
+            Enterprise testElement;
+            for (int i = 0; i < elements; i++)
+            {
+                testElement = new Enterprise("predp", i);
+                testQueue.Enqueue(testElement);
+                testArray[i] = testElement;
+            }
+            for (int i = 0; i < elements; i++)
+            {
+
+            }
+        }
+
         public static void CreateEnterprise()
         {
             queue.Enqueue(new Enterprise(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, superior));
