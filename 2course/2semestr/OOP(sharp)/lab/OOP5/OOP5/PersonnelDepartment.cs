@@ -72,44 +72,37 @@
 
         public static bool CheckingEnterpriseName(string enterpriseName)
         {
-            if (enterpriseName.Length == 0) return false;
-            return true;
+            return !(enterpriseName.Length == 0);
         }
 
         public static bool CheckingWorkmans(int workmans)
         {
-            if (workmans <= 0) return false;
-            return true;
+            return !(workmans <= 0);
         }
 
         public static bool CheckingPaymentPerHour(double paymentPerHour)
         {
-            if (paymentPerHour <= 0) return false;
-            return true;
+            return !(paymentPerHour <= 0);
         }
 
         public static bool CheckingBestWorker(string bestWorker)
         {
-            if (bestWorker.Length == 0) return false;
-            return true;
+            return !(bestWorker.Length == 0);
         }
 
         public static bool CheckingHoursPerMonth(int hoursPerMonth)
         {
-            if (hoursPerMonth <= 0) return false;
-            return true;
+            return !(hoursPerMonth <= 0);
         }
 
         public static bool CheckingImposing(double imposing)
         {
-            if (imposing <= 0) return false;
-            return true;
+            return !(imposing <= 0);
         }
 
         public static bool CheckingSuperior(string superior)
         {
-            if (superior.Length == 0) return false;
-            return true;
+            return !(superior.Length == 0);
         }
     }
 }

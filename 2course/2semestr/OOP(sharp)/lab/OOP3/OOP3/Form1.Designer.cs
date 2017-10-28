@@ -49,6 +49,7 @@ namespace OOP3
             this.tbOutput = new System.Windows.Forms.TextBox();
             this.labelError = new System.Windows.Forms.Label();
             this.buttonShow = new System.Windows.Forms.Button();
+            this.listComparison = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // labelEnterpriseName
@@ -200,7 +201,7 @@ namespace OOP3
             this.tbOutput.Name = "tbOutput";
             this.tbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbOutput.ShortcutsEnabled = false;
-            this.tbOutput.Size = new System.Drawing.Size(224, 193);
+            this.tbOutput.Size = new System.Drawing.Size(327, 193);
             this.tbOutput.TabIndex = 14;
             this.tbOutput.TabStop = false;
             // 
@@ -224,11 +225,21 @@ namespace OOP3
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
             // 
+            // listComparison
+            // 
+            this.listComparison.Location = new System.Drawing.Point(277, 217);
+            this.listComparison.Name = "listComparison";
+            this.listComparison.Size = new System.Drawing.Size(324, 52);
+            this.listComparison.TabIndex = 19;
+            this.listComparison.UseCompatibleStateImageBehavior = false;
+            this.listComparison.View = System.Windows.Forms.View.List;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 273);
+            this.ClientSize = new System.Drawing.Size(613, 273);
+            this.Controls.Add(this.listComparison);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.tbOutput);
@@ -298,7 +309,8 @@ namespace OOP3
         public System.Windows.Forms.Button buttonCreate;
         public System.Windows.Forms.TextBox tbOutput;
         public System.Windows.Forms.Label labelError;
-        private System.Windows.Forms.Button buttonShow;
+        public System.Windows.Forms.Button buttonShow;
+        public System.Windows.Forms.ListView listComparison;
     }
 }
 

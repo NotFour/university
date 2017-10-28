@@ -36,7 +36,7 @@ namespace OOP5
             this.labelBestWorker = new System.Windows.Forms.Label();
             this.labelHoursPerMonth = new System.Windows.Forms.Label();
             this.labelImposing = new System.Windows.Forms.Label();
-            this.labelSuperior = new System.Windows.Forms.Label();
+            this.labelBakingPerMonth = new System.Windows.Forms.Label();
             this.tbEnterpriseName = new System.Windows.Forms.TextBox();
             this.tbWorkmans = new System.Windows.Forms.TextBox();
             this.tbPaymentPerHour = new System.Windows.Forms.TextBox();
@@ -48,7 +48,23 @@ namespace OOP5
             this.buttonCreate = new System.Windows.Forms.Button();
             this.tbOutput = new System.Windows.Forms.TextBox();
             this.labelError = new System.Windows.Forms.Label();
-            this.buttonShow = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelEnterpriseName
@@ -112,15 +128,15 @@ namespace OOP5
             this.labelImposing.TabIndex = 5;
             this.labelImposing.Text = "Размер налога";
             // 
-            // labelSuperior
+            // labelBakingPerMonth
             // 
-            this.labelSuperior.AutoEllipsis = true;
-            this.labelSuperior.AutoSize = true;
-            this.labelSuperior.Location = new System.Drawing.Point(10, 190);
-            this.labelSuperior.Name = "labelSuperior";
-            this.labelSuperior.Size = new System.Drawing.Size(93, 13);
-            this.labelSuperior.TabIndex = 6;
-            this.labelSuperior.Text = "Глава отделения";
+            this.labelBakingPerMonth.AutoEllipsis = true;
+            this.labelBakingPerMonth.AutoSize = true;
+            this.labelBakingPerMonth.Location = new System.Drawing.Point(10, 190);
+            this.labelBakingPerMonth.Name = "labelSuperior";
+            this.labelBakingPerMonth.Size = new System.Drawing.Size(93, 13);
+            this.labelBakingPerMonth.TabIndex = 6;
+            this.labelBakingPerMonth.Text = "Выпечки в месяц";
             // 
             // tbEnterpriseName
             // 
@@ -173,7 +189,7 @@ namespace OOP5
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(13, 217);
+            this.buttonExit.Location = new System.Drawing.Point(785, 217);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(100, 23);
             this.buttonExit.TabIndex = 15;
@@ -195,7 +211,7 @@ namespace OOP5
             // 
             this.tbOutput.AcceptsTab = true;
             this.tbOutput.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tbOutput.Location = new System.Drawing.Point(274, 10);
+            this.tbOutput.Location = new System.Drawing.Point(661, 17);
             this.tbOutput.Multiline = true;
             this.tbOutput.Name = "tbOutput";
             this.tbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -207,29 +223,184 @@ namespace OOP5
             // labelError
             // 
             this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(10, 243);
+            this.labelError.Location = new System.Drawing.Point(10, 227);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(80, 13);
             this.labelError.TabIndex = 17;
             this.labelError.Text = "Ошибка ввода";
             this.labelError.Visible = false;
             // 
-            // buttonShow
+            // button1
             // 
-            this.buttonShow.Location = new System.Drawing.Point(156, 246);
-            this.buttonShow.Name = "buttonShow";
-            this.buttonShow.Size = new System.Drawing.Size(100, 23);
-            this.buttonShow.TabIndex = 18;
-            this.buttonShow.Text = "Показать";
-            this.buttonShow.UseVisualStyleBackColor = true;
-            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
+            this.button1.Location = new System.Drawing.Point(661, 217);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Показать";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(308, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Ошибка ввода";
+            this.label1.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(454, 217);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Создать";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(454, 190);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 32;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(454, 160);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 31;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(454, 130);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 30;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(454, 100);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 29;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(454, 70);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 28;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(454, 40);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 27;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(454, 10);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoEllipsis = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(308, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Глава отделения";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoEllipsis = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(308, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Размер налога";
+            // 
+            // label4
+            // 
+            this.label4.AutoEllipsis = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(308, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Рабочих часов в месяц";
+            // 
+            // label5
+            // 
+            this.label5.AutoEllipsis = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(308, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 13);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Лучший работник";
+            // 
+            // label6
+            // 
+            this.label6.AutoEllipsis = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(308, 70);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "ЗП в час";
+            // 
+            // label7
+            // 
+            this.label7.AutoEllipsis = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(308, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Количество работников";
+            // 
+            // label8
+            // 
+            this.label8.AutoEllipsis = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(308, 10);
+            this.label8.MaximumSize = new System.Drawing.Size(125, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 13);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Название предприятия";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 273);
-            this.Controls.Add(this.buttonShow);
+            this.ClientSize = new System.Drawing.Size(897, 247);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.tbOutput);
             this.Controls.Add(this.buttonCreate);
@@ -241,7 +412,7 @@ namespace OOP5
             this.Controls.Add(this.tbPaymentPerHour);
             this.Controls.Add(this.tbWorkmans);
             this.Controls.Add(this.tbEnterpriseName);
-            this.Controls.Add(this.labelSuperior);
+            this.Controls.Add(this.labelBakingPerMonth);
             this.Controls.Add(this.labelImposing);
             this.Controls.Add(this.labelHoursPerMonth);
             this.Controls.Add(this.labelBestWorker);
@@ -262,10 +433,10 @@ namespace OOP5
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
-            if (Program.CheckingTBs())
+            if (Program.CheckingTBsPersonnelDepartment())
             {
                 labelError.Visible = false;
-                Program.CreateEnterprise();
+                Program.CreatePersonnelDepartment();
             }
             else
             {
@@ -286,7 +457,7 @@ namespace OOP5
         public System.Windows.Forms.Label labelBestWorker;
         public System.Windows.Forms.Label labelHoursPerMonth;
         public System.Windows.Forms.Label labelImposing;
-        public System.Windows.Forms.Label labelSuperior;
+        public System.Windows.Forms.Label labelBakingPerMonth;
         public System.Windows.Forms.TextBox tbEnterpriseName;
         public System.Windows.Forms.TextBox tbWorkmans;
         public System.Windows.Forms.TextBox tbPaymentPerHour;
@@ -298,7 +469,23 @@ namespace OOP5
         public System.Windows.Forms.Button buttonCreate;
         public System.Windows.Forms.TextBox tbOutput;
         public System.Windows.Forms.Label labelError;
-        private System.Windows.Forms.Button buttonShow;
+        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
     }
 }
 

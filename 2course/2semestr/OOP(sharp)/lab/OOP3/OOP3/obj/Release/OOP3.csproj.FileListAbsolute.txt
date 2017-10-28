@@ -1,0 +1,8 @@
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\bin\Release\OOP3.exe.config
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\bin\Release\OOP3.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\bin\Release\OOP3.pdb
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\obj\Release\OOP3.Form1.resources
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\obj\Release\OOP3.Properties.Resources.resources
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\obj\Release\OOP3.csproj.GenerateResource.Cache
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\obj\Release\OOP3.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP3\OOP3\obj\Release\OOP3.pdb

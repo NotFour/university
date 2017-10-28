@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace OOP4
 {
@@ -36,8 +37,8 @@ namespace OOP4
             enterpriseName = form.tbEnterpriseName.Text;
             bestWorker = form.tbBestWorker.Text;
             superior = form.tbSuperior.Text;
-            System.Drawing.Color colorError = System.Drawing.Color.FromArgb(255, 200, 198);
-            System.Drawing.Color colorDefault = System.Drawing.Color.White;
+            Color colorError = Color.FromArgb(255, 200, 198);
+            Color colorDefault = Color.White;
 
             if (!PersonnelDepartment.CheckingEnterpriseName(enterpriseName))
             {
@@ -107,7 +108,21 @@ namespace OOP4
             form.tbOutput.Text = null;
             foreach (PersonnelDepartment i in queue)
                 form.tbOutput.Text += i.ToString()+"\n";
-        }
 
+            TreeView treeView = form.tvOutput;
+            treeView.Nodes.Clear();
+            treeView.Nodes.Add("Количество объектов: " + PersonnelDepartment.objects);
+            foreach (PersonnelDepartment i in queue)
+            {
+                treeView.Nodes[0].Nodes.Add(i.GetEnterpriseName());
+                treeView.Nodes[0].LastNode.Nodes.Add("Лучший работник " + i.GetWorkmans());
+                treeView.Nodes[0].LastNode.Nodes.Add("ЗП в час " + i.GetPaymentPerHour());
+                treeView.Nodes[0].LastNode.Nodes.Add("Лучший работник " + i.GetBestWorker());
+                treeView.Nodes[0].LastNode.Nodes.Add("Рабочих часов в месяц " + i.GetHoursPerMonth());
+                treeView.Nodes[0].LastNode.Nodes.Add("Налог " + i.GetImposing());
+                treeView.Nodes[0].LastNode.Nodes.Add("Начальник " + i.GetSuperior());
+            }
+            form.tvOutput = treeView;
+        }
     }
 }

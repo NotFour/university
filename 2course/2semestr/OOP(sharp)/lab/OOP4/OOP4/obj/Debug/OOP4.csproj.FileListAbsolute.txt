@@ -7,3 +7,12 @@ c:\users\notfour\documents\visual studio 2017\Projects\OOP4\OOP4\obj\Debug\OOP4.
 c:\users\notfour\documents\visual studio 2017\Projects\OOP4\OOP4\obj\Debug\OOP4.Form1.resources
 c:\users\notfour\documents\visual studio 2017\Projects\OOP4\OOP4\obj\Debug\OOP4.exe
 c:\users\notfour\documents\visual studio 2017\Projects\OOP4\OOP4\obj\Debug\OOP4.pdb
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\bin\Debug\OOP4.exe.config
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.pdb
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\bin\Debug\OOP4.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\bin\Debug\OOP4.pdb
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.csprojResolveAssemblyReference.cache
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.Form1.resources
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.Properties.Resources.resources
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP4\OOP4\obj\Debug\OOP4.csproj.GenerateResource.Cache

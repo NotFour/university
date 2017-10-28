@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace OOP3
 {
@@ -27,6 +28,7 @@ namespace OOP3
             Application.SetCompatibleTextRenderingDefault(false);
             form = new Form1();
             queue = new Queue<Enterprise>();
+            additionalTask();
             Application.Run(form);
         }
 
@@ -99,20 +101,73 @@ namespace OOP3
 
         public static void additionalTask()
         { 
-            const int elements = 100000;
+            const int elements = 50000;
+
             Queue<Enterprise> testQueue = new Queue<Enterprise>();
-            Enterprise[] testArray = new Enterprise[100000];
-            Enterprise testElement;
+            Enterprise[] testArray = new Enterprise[elements];
+            Enterprise testElement = new Enterprise();
             for (int i = 0; i < elements; i++)
             {
-                testElement = new Enterprise("predp", i);
                 testQueue.Enqueue(testElement);
                 testArray[i] = testElement;
             }
+
+            Stopwatch stopWatch = new Stopwatch();
+
+            ListViewItem[] listViewItems = new ListViewItem[4];
+            for (int i = 0; i < listViewItems.Length; i++)
+            {
+                listViewItems[i] = new ListViewItem();
+            }
+
+            stopWatch.Start();
+            foreach (Enterprise enterprise in testQueue)
+            {
+                testElement = enterprise;
+            }
+            stopWatch.Stop();
+            listViewItems[0].Text = "Выборка из коллекции за " + stopWatch.Elapsed.Ticks + " тиков.";
+
+            stopWatch.Reset();
+            stopWatch.Start();
             for (int i = 0; i < elements; i++)
             {
-
+                testElement = testArray[i];
             }
+            stopWatch.Stop();
+            listViewItems[1].Text = "Выборка из массива за " + stopWatch.Elapsed.Ticks + " тиков.";
+
+            Random random = new Random();
+
+            stopWatch.Reset();
+            stopWatch.Start();
+            for (int i = 0; i < elements; i++)
+            {
+                int index = random.Next(elements);
+                foreach (Enterprise enterprise in testQueue)
+                {
+                    if (index <= 0)
+                    {
+                        testElement = enterprise;
+                        break;
+                    }
+                    index--;
+                }
+            }
+            stopWatch.Stop();
+            listViewItems[2].Text = "Случайная выборка из очереди за " + stopWatch.Elapsed.Ticks + " тиков.";
+            
+            stopWatch.Reset();
+            stopWatch.Start();
+            for (int i = 0; i < elements; i++)
+            {
+                int index = random.Next(elements);
+                testElement = testArray[index];
+            }
+            stopWatch.Stop();
+            listViewItems[3].Text = "Случайная выборка из массива за " + stopWatch.Elapsed.Ticks + " тиков.";
+            
+            form.listComparison.Items.AddRange(listViewItems);
         }
 
         public static void CreateEnterprise()
@@ -126,6 +181,5 @@ namespace OOP3
             foreach (Enterprise i in queue)
                 form.tbOutput.Text += i.ToString()+"\n";
         }
-
     }
 }

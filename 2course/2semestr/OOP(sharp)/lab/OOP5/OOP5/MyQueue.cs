@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP5
 {
-    class MyQueue : Queue<PersonnelDepartment>
+    class MyQueue : Queue<Department>
     {
-        public static MyQueue operator +(MyQueue queue, PersonnelDepartment dep)
+        public static MyQueue operator +(MyQueue queue, Department dep)
         {
             queue.Enqueue(dep);
             return queue;

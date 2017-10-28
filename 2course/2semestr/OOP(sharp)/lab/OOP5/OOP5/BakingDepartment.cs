@@ -8,22 +8,26 @@ namespace OOP5
 {
     class BakingDepartment : Department
     {
+
+        public static int objects = 0;
+
         int _bakingPerMonth;
 
         public override string ToString()
         {
-            return "Организация: " + _enterpriseName
+            return "Объектов класса " + objects 
+            + "Организация: " + _enterpriseName
             + "\r\nКол-во работников: " + _workmans
             + "\r\nПлата в час: " + _paymentPerHour
             + "\r\nЛучший работник: " + _bestWorker
             + "\r\nРабочих часов в месяц: " + _hoursPerMonth
             + "\r\nНалог: " + _imposing
-            + "\r\nГлава отделения: " + _superior
             + "\r\nВыпечки в месяц: " + _bakingPerMonth + "\r\n\r\n";
         }
 
         public BakingDepartment()
         {
+            objects++;
             _bakingPerMonth = 1000;
             _enterpriseName = "Funcorp";
             _workmans = 350;

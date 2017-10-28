@@ -7,3 +7,6 @@ c:\users\notfour\documents\visual studio 2017\Projects\OOP6\OOP6\obj\Debug\OOP6.
 c:\users\notfour\documents\visual studio 2017\Projects\OOP6\OOP6\obj\Debug\OOP6.csproj.GenerateResource.Cache
 c:\users\notfour\documents\visual studio 2017\Projects\OOP6\OOP6\obj\Debug\OOP6.exe
 c:\users\notfour\documents\visual studio 2017\Projects\OOP6\OOP6\obj\Debug\OOP6.pdb
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP6\OOP6\bin\Debug\OOP6.exe.config
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP6\OOP6\obj\Debug\OOP6.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP6\OOP6\obj\Debug\OOP6.pdb
