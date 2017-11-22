@@ -96,12 +96,13 @@ namespace OOP3
                 check = false;
             }
             else form.tbSuperior.BackColor = colorDefault;
+
             return check;
         }
 
         public static void additionalTask()
         { 
-            const int elements = 50000;
+            const int elements = 100000;
 
             Queue<Enterprise> testQueue = new Queue<Enterprise>();
             Enterprise[] testArray = new Enterprise[elements];
@@ -127,8 +128,8 @@ namespace OOP3
             }
             stopWatch.Stop();
             listViewItems[0].Text = "Выборка из коллекции за " + stopWatch.Elapsed.Ticks + " тиков.";
-
             stopWatch.Reset();
+            
             stopWatch.Start();
             for (int i = 0; i < elements; i++)
             {
@@ -136,10 +137,10 @@ namespace OOP3
             }
             stopWatch.Stop();
             listViewItems[1].Text = "Выборка из массива за " + stopWatch.Elapsed.Ticks + " тиков.";
+            stopWatch.Reset();
 
             Random random = new Random();
 
-            stopWatch.Reset();
             stopWatch.Start();
             for (int i = 0; i < elements; i++)
             {
@@ -156,8 +157,8 @@ namespace OOP3
             }
             stopWatch.Stop();
             listViewItems[2].Text = "Случайная выборка из очереди за " + stopWatch.Elapsed.Ticks + " тиков.";
-            
             stopWatch.Reset();
+            
             stopWatch.Start();
             for (int i = 0; i < elements; i++)
             {

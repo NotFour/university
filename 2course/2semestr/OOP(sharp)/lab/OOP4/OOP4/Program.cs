@@ -103,7 +103,7 @@ namespace OOP4
             queue.Enqueue(new PersonnelDepartment(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, superior));
         }
 
-        public static void ShowAllEnterprises()
+        public static void ShowAllDepartments()
         {
             form.tbOutput.Text = null;
             foreach (PersonnelDepartment i in queue)

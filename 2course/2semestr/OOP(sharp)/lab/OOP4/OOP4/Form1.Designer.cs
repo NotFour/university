@@ -285,7 +285,7 @@ namespace OOP4
 
         private void buttonShow_Click(object sender, System.EventArgs e)
         {
-            Program.ShowAllEnterprises();
+            Program.ShowAllDepartments();
         }
 
         #endregion
