@@ -15,8 +15,8 @@ namespace OOP5
 
         public override string ToString()
         {
-            return "Объектов класса " + objects 
-            + "Организация: " + _enterpriseName
+            return "Объектов класса BakingDepartment " + objects
+            + "\r\nОрганизация: " + _enterpriseName
             + "\r\nКол-во работников: " + _workmans
             + "\r\nПлата в час: " + _paymentPerHour
             + "\r\nЛучший работник: " + _bestWorker
@@ -28,14 +28,46 @@ namespace OOP5
         public BakingDepartment()
         {
             objects++;
-            _bakingPerMonth = 1000;
             _enterpriseName = "Funcorp";
             _workmans = 350;
             _paymentPerHour = 220.5;
             _bestWorker = "Serov";
             _hoursPerMonth = 200;
             _imposing = 10.5;
-            _superior = "Cherkasova";
+            _bakingPerMonth = 1000;
+        }
+
+        public BakingDepartment(string enterpriseName,
+        int workmans,
+        double paymentPerHour,
+        string bestWorker,
+        int hoursPerMonth,
+        double imposing,
+        int bakingPerMonth)
+        {
+            objects++;
+            _enterpriseName = enterpriseName;
+            _workmans = workmans;
+            _paymentPerHour = paymentPerHour;
+            _bestWorker = bestWorker;
+            _hoursPerMonth = hoursPerMonth;
+            _imposing = imposing;
+            _bakingPerMonth = bakingPerMonth;
+        }
+
+        public void SetBakingPerMonth(int bakingPerMonth)
+        {
+            _bakingPerMonth = bakingPerMonth;
+        }
+
+        public int GetBakingPerMonth()
+        {
+            return _bakingPerMonth;
+        }
+
+        public static bool CheckingBakingPerMonth(int bakingPerMonth)
+        {
+            return !(bakingPerMonth <= 0);
         }
     }
 }

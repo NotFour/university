@@ -60,7 +60,7 @@
 
         public override string ToString()
         {
-            return  "Объектов класса" + objects
+            return  "Объектов класса PersonnelDepartment" + objects
             + "\r\nОрганизация: " + _enterpriseName
             + "\r\nКол-во работников: " + _workmans
             + "\r\nПлата в час: " + _paymentPerHour
@@ -68,41 +68,6 @@
             + "\r\nРабочих часов в месяц: " + _hoursPerMonth
             + "\r\nНалог: " + _imposing
             + "\r\nГлава отделения: " + _superior + "\r\n\r\n";
-        }
-
-        public static bool CheckingEnterpriseName(string enterpriseName)
-        {
-            return !(enterpriseName.Length == 0);
-        }
-
-        public static bool CheckingWorkmans(int workmans)
-        {
-            return !(workmans <= 0);
-        }
-
-        public static bool CheckingPaymentPerHour(double paymentPerHour)
-        {
-            return !(paymentPerHour <= 0);
-        }
-
-        public static bool CheckingBestWorker(string bestWorker)
-        {
-            return !(bestWorker.Length == 0);
-        }
-
-        public static bool CheckingHoursPerMonth(int hoursPerMonth)
-        {
-            return !(hoursPerMonth <= 0);
-        }
-
-        public static bool CheckingImposing(double imposing)
-        {
-            return !(imposing <= 0);
-        }
-
-        public static bool CheckingSuperior(string superior)
-        {
-            return !(superior.Length == 0);
         }
     }
 }

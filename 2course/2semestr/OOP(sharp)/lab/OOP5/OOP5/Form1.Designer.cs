@@ -48,17 +48,17 @@ namespace OOP5
             this.buttonCreate = new System.Windows.Forms.Button();
             this.tbOutput = new System.Windows.Forms.TextBox();
             this.labelError = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.buttonShow = new System.Windows.Forms.Button();
+            this.labelError2 = new System.Windows.Forms.Label();
+            this.buttonCreate2 = new System.Windows.Forms.Button();
+            this.tbBakingPerMonth = new System.Windows.Forms.TextBox();
+            this.tbImposing2 = new System.Windows.Forms.TextBox();
+            this.tbHoursPerMonth2 = new System.Windows.Forms.TextBox();
+            this.tbBestWorker2 = new System.Windows.Forms.TextBox();
+            this.tbPayment2 = new System.Windows.Forms.TextBox();
+            this.tbWorkmans2 = new System.Windows.Forms.TextBox();
+            this.tbEnterpriseName2 = new System.Windows.Forms.TextBox();
+            this.labelSuperior = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -132,9 +132,9 @@ namespace OOP5
             // 
             this.labelBakingPerMonth.AutoEllipsis = true;
             this.labelBakingPerMonth.AutoSize = true;
-            this.labelBakingPerMonth.Location = new System.Drawing.Point(10, 190);
-            this.labelBakingPerMonth.Name = "labelSuperior";
-            this.labelBakingPerMonth.Size = new System.Drawing.Size(93, 13);
+            this.labelBakingPerMonth.Location = new System.Drawing.Point(308, 191);
+            this.labelBakingPerMonth.Name = "labelBakingPerMonth";
+            this.labelBakingPerMonth.Size = new System.Drawing.Size(95, 13);
             this.labelBakingPerMonth.TabIndex = 6;
             this.labelBakingPerMonth.Text = "Выпечки в месяц";
             // 
@@ -230,93 +230,94 @@ namespace OOP5
             this.labelError.Text = "Ошибка ввода";
             this.labelError.Visible = false;
             // 
-            // button1
+            // buttonShow
             // 
-            this.button1.Location = new System.Drawing.Point(661, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Показать";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonShow.Location = new System.Drawing.Point(661, 217);
+            this.buttonShow.Name = "buttonShow";
+            this.buttonShow.Size = new System.Drawing.Size(100, 23);
+            this.buttonShow.TabIndex = 36;
+            this.buttonShow.Text = "Показать";
+            this.buttonShow.UseVisualStyleBackColor = true;
+            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
             // 
-            // label1
+            // labelError2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(308, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Ошибка ввода";
-            this.label1.Visible = false;
+            this.labelError2.AutoSize = true;
+            this.labelError2.Location = new System.Drawing.Point(308, 222);
+            this.labelError2.Name = "labelError2";
+            this.labelError2.Size = new System.Drawing.Size(80, 13);
+            this.labelError2.TabIndex = 35;
+            this.labelError2.Text = "Ошибка ввода";
+            this.labelError2.Visible = false;
             // 
-            // button2
+            // buttonCreate2
             // 
-            this.button2.Location = new System.Drawing.Point(454, 217);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Создать";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCreate2.Location = new System.Drawing.Point(454, 217);
+            this.buttonCreate2.Name = "buttonCreate2";
+            this.buttonCreate2.Size = new System.Drawing.Size(100, 23);
+            this.buttonCreate2.TabIndex = 34;
+            this.buttonCreate2.Text = "Создать";
+            this.buttonCreate2.UseVisualStyleBackColor = true;
+            this.buttonCreate2.Click += new System.EventHandler(this.buttonCreate2_Click);
             // 
-            // textBox1
+            // tbBakingPerMonth
             // 
-            this.textBox1.Location = new System.Drawing.Point(454, 190);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 32;
+            this.tbBakingPerMonth.Location = new System.Drawing.Point(454, 191);
+            this.tbBakingPerMonth.Name = "tbBakingPerMonth";
+            this.tbBakingPerMonth.Size = new System.Drawing.Size(100, 20);
+            this.tbBakingPerMonth.TabIndex = 32;
             // 
-            // textBox2
+            // tbImposing2
             // 
-            this.textBox2.Location = new System.Drawing.Point(454, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 31;
+            this.tbImposing2.Location = new System.Drawing.Point(454, 160);
+            this.tbImposing2.Name = "tbImposing2";
+            this.tbImposing2.Size = new System.Drawing.Size(100, 20);
+            this.tbImposing2.TabIndex = 31;
             // 
-            // textBox3
+            // tbHoursPerMonth2
             // 
-            this.textBox3.Location = new System.Drawing.Point(454, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 30;
+            this.tbHoursPerMonth2.Location = new System.Drawing.Point(454, 130);
+            this.tbHoursPerMonth2.Name = "tbHoursPerMonth2";
+            this.tbHoursPerMonth2.Size = new System.Drawing.Size(100, 20);
+            this.tbHoursPerMonth2.TabIndex = 30;
             // 
-            // textBox4
+            // tbBestWorker2
             // 
-            this.textBox4.Location = new System.Drawing.Point(454, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 29;
+            this.tbBestWorker2.Location = new System.Drawing.Point(454, 100);
+            this.tbBestWorker2.Name = "tbBestWorker2";
+            this.tbBestWorker2.Size = new System.Drawing.Size(100, 20);
+            this.tbBestWorker2.TabIndex = 29;
             // 
-            // textBox5
+            // tbPayment2
             // 
-            this.textBox5.Location = new System.Drawing.Point(454, 70);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 28;
+            this.tbPayment2.Location = new System.Drawing.Point(454, 70);
+            this.tbPayment2.Name = "tbPayment2";
+            this.tbPayment2.Size = new System.Drawing.Size(100, 20);
+            this.tbPayment2.TabIndex = 28;
             // 
-            // textBox6
+            // tbWorkmans2
             // 
-            this.textBox6.Location = new System.Drawing.Point(454, 40);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 27;
+            this.tbWorkmans2.Location = new System.Drawing.Point(454, 40);
+            this.tbWorkmans2.Name = "tbWorkmans2";
+            this.tbWorkmans2.Size = new System.Drawing.Size(100, 20);
+            this.tbWorkmans2.TabIndex = 27;
             // 
-            // textBox7
+            // tbEnterpriseName2
             // 
-            this.textBox7.Location = new System.Drawing.Point(454, 10);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 26;
+            this.tbEnterpriseName2.Location = new System.Drawing.Point(454, 10);
+            this.tbEnterpriseName2.Name = "tbEnterpriseName2";
+            this.tbEnterpriseName2.Size = new System.Drawing.Size(100, 20);
+            this.tbEnterpriseName2.TabIndex = 26;
             // 
-            // label2
+            // labelSuperior
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(308, 190);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Глава отделения";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelSuperior.AutoEllipsis = true;
+            this.labelSuperior.AutoSize = true;
+            this.labelSuperior.Location = new System.Drawing.Point(10, 190);
+            this.labelSuperior.Name = "labelSuperior";
+            this.labelSuperior.Size = new System.Drawing.Size(93, 13);
+            this.labelSuperior.TabIndex = 25;
+            this.labelSuperior.Text = "Глава отделения";
             // 
             // label3
             // 
@@ -384,17 +385,17 @@ namespace OOP5
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 247);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonShow);
+            this.Controls.Add(this.labelError2);
+            this.Controls.Add(this.buttonCreate2);
+            this.Controls.Add(this.tbBakingPerMonth);
+            this.Controls.Add(this.tbImposing2);
+            this.Controls.Add(this.tbHoursPerMonth2);
+            this.Controls.Add(this.tbBestWorker2);
+            this.Controls.Add(this.tbPayment2);
+            this.Controls.Add(this.tbWorkmans2);
+            this.Controls.Add(this.tbEnterpriseName2);
+            this.Controls.Add(this.labelSuperior);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -444,6 +445,19 @@ namespace OOP5
             }
         }
 
+        private void buttonCreate2_Click(object sender, EventArgs e)
+        {
+            if (Program.CheckingTBsBakingDepartment())
+            {
+                labelError2.Visible = false;
+                Program.CreateBakingDepartment();
+            }
+            else
+            {
+                labelError2.Visible = true;
+            }
+        }
+
         private void buttonShow_Click(object sender, System.EventArgs e)
         {
             Program.ShowAllEnterprises();
@@ -469,17 +483,17 @@ namespace OOP5
         public System.Windows.Forms.Button buttonCreate;
         public System.Windows.Forms.TextBox tbOutput;
         public System.Windows.Forms.Label labelError;
-        private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonShow;
+        public System.Windows.Forms.Label labelError2;
+        public System.Windows.Forms.Button buttonCreate2;
+        public System.Windows.Forms.TextBox tbBakingPerMonth;
+        public System.Windows.Forms.TextBox tbImposing2;
+        public System.Windows.Forms.TextBox tbHoursPerMonth2;
+        public System.Windows.Forms.TextBox tbBestWorker2;
+        public System.Windows.Forms.TextBox tbPayment2;
+        public System.Windows.Forms.TextBox tbWorkmans2;
+        public System.Windows.Forms.TextBox tbEnterpriseName2;
+        public System.Windows.Forms.Label labelSuperior;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;

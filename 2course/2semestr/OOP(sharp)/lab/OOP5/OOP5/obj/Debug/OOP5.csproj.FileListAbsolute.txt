@@ -14,3 +14,5 @@ E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\obj\Debug\OOP5.csprojRes
 E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\obj\Debug\OOP5.Form1.resources
 E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\obj\Debug\OOP5.Properties.Resources.resources
 E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\obj\Debug\OOP5.csproj.GenerateResource.Cache
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\bin\Debug\OOP5.exe
+E:\university\2course\2semestr\OOP(sharp)\lab\OOP5\OOP5\bin\Debug\OOP5.pdb

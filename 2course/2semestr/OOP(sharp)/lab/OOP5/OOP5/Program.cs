@@ -15,6 +15,7 @@ namespace OOP5
         static int hoursPerMonth;
         static double imposing;
         static string superior;
+        static int bakingPerMonth;
         static MyQueue queue;
 
         /// <summary>
@@ -100,67 +101,66 @@ namespace OOP5
         public static bool CheckingTBsBakingDepartment()
         {
             bool check = true;
-            enterpriseName = form.tbEnterpriseName.Text;
-            bestWorker = form.tbBestWorker.Text;
-            superior = form.tbSuperior.Text;
+            enterpriseName = form.tbEnterpriseName2.Text;
+            bestWorker = form.tbBestWorker2.Text;
             System.Drawing.Color colorError = System.Drawing.Color.FromArgb(255, 200, 198);
             System.Drawing.Color colorDefault = System.Drawing.Color.White;
 
-            if (!PersonnelDepartment.CheckingEnterpriseName(enterpriseName))
+            if (!BakingDepartment.CheckingEnterpriseName(enterpriseName))
             {
-                form.tbEnterpriseName.Text = "";
-                form.tbEnterpriseName.BackColor = colorError;
+                form.tbEnterpriseName2.Text = "";
+                form.tbEnterpriseName2.BackColor = colorError;
                 check = false;
             }
-            else form.tbEnterpriseName.BackColor = colorDefault;
+            else form.tbEnterpriseName2.BackColor = colorDefault;
 
-            if (!Int32.TryParse(form.tbWorkmans.Text, out workmans) || !PersonnelDepartment.CheckingWorkmans(workmans))
+            if (!Int32.TryParse(form.tbWorkmans2.Text, out workmans) || !BakingDepartment.CheckingWorkmans(workmans))
             {
-                form.tbWorkmans.Text = "";
-                form.tbWorkmans.BackColor = colorError;
+                form.tbWorkmans2.Text = "";
+                form.tbWorkmans2.BackColor = colorError;
                 check = false;
             }
-            else form.tbWorkmans.BackColor = colorDefault;
+            else form.tbWorkmans2.BackColor = colorDefault;
 
-            if (!Double.TryParse(form.tbPaymentPerHour.Text, out paymentPerHour) || !PersonnelDepartment.CheckingPaymentPerHour(paymentPerHour))
+            if (!Double.TryParse(form.tbPayment2.Text, out paymentPerHour) || !BakingDepartment.CheckingPaymentPerHour(paymentPerHour))
             {
-                form.tbPaymentPerHour.Text = "";
-                form.tbPaymentPerHour.BackColor = colorError;
+                form.tbPayment2.Text = "";
+                form.tbPayment2.BackColor = colorError;
                 check = false;
             }
-            else form.tbPaymentPerHour.BackColor = colorDefault;
+            else form.tbPayment2.BackColor = colorDefault;
 
-            if (!PersonnelDepartment.CheckingBestWorker(bestWorker))
+            if (!BakingDepartment.CheckingBestWorker(bestWorker))
             {
-                form.tbBestWorker.Text = "";
-                form.tbBestWorker.BackColor = colorError;
+                form.tbBestWorker2.Text = "";
+                form.tbBestWorker2.BackColor = colorError;
                 check = false;
             }
-            else form.tbBestWorker.BackColor = colorDefault;
+            else form.tbBestWorker2.BackColor = colorDefault;
 
-            if (!Int32.TryParse(form.tbHoursPerMonth.Text, out hoursPerMonth) || !PersonnelDepartment.CheckingHoursPerMonth(hoursPerMonth))
+            if (!Int32.TryParse(form.tbHoursPerMonth2.Text, out hoursPerMonth) || !BakingDepartment.CheckingHoursPerMonth(hoursPerMonth))
             {
-                form.tbHoursPerMonth.Text = "";
-                form.tbHoursPerMonth.BackColor = colorError;
+                form.tbHoursPerMonth2.Text = "";
+                form.tbHoursPerMonth2.BackColor = colorError;
                 check = false;
             }
-            else form.tbHoursPerMonth.BackColor = colorDefault;
+            else form.tbHoursPerMonth2.BackColor = colorDefault;
 
-            if (!Double.TryParse(form.tbImposing.Text, out imposing) || !PersonnelDepartment.CheckingImposing(imposing))
+            if (!Double.TryParse(form.tbImposing2.Text, out imposing) || !BakingDepartment.CheckingImposing(imposing))
             {
-                form.tbImposing.Text = "";
-                form.tbImposing.BackColor = colorError;
+                form.tbImposing2.Text = "";
+                form.tbImposing2.BackColor = colorError;
                 check = false;
             }
-            else form.tbImposing.BackColor = colorDefault;
+            else form.tbImposing2.BackColor = colorDefault;
 
-            if (!PersonnelDepartment.CheckingSuperior(superior))
+            if (!Int32.TryParse(form.tbBakingPerMonth.Text, out bakingPerMonth) || !BakingDepartment.CheckingBakingPerMonth(bakingPerMonth))
             {
-                form.tbSuperior.Text = "";
-                form.tbSuperior.BackColor = colorError;
+                form.tbBakingPerMonth.Text = "";
+                form.tbBakingPerMonth.BackColor = colorError;
                 check = false;
             }
-            else form.tbSuperior.BackColor = colorDefault;
+            else form.tbBakingPerMonth.BackColor = colorDefault;
             return check;
         }
 
@@ -171,13 +171,13 @@ namespace OOP5
 
         public static void CreateBakingDepartment()
         {
-            queue = queue + (new PersonnelDepartment(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, superior));
+            queue = queue + (new BakingDepartment(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, bakingPerMonth));
         }
 
         public static void ShowAllEnterprises()
         {
             form.tbOutput.Text = null;
-            foreach (PersonnelDepartment i in queue)
+            foreach (Department i in queue)
                 form.tbOutput.Text += i.ToString()+"\n";
         }
     }
