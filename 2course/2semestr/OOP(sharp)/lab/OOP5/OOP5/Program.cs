@@ -17,6 +17,7 @@ namespace OOP5
         static string superior;
         static int bakingPerMonth;
         static MyQueue queue;
+        static Random random = new Random();
 
         /// <summary>
         /// Главная точка входа для приложения.
@@ -28,7 +29,20 @@ namespace OOP5
             Application.SetCompatibleTextRenderingDefault(false);
             form = new Form1();
             queue = new MyQueue();
+            additionalTask();
             Application.Run(form);
+
+        }
+
+        public static void additionalTask() 
+        {
+            System.Threading.TimerCallback timerCallback = new System.Threading.TimerCallback((object obj) => 
+            {
+                queue = queue+(new PersonnelDepartment("predp" + random.Next(100), random.Next(100)));
+                ShowAllEnterprises();
+            });
+            System.Threading.Timer timer = new System.Threading.Timer(timerCallback, 0, 5000, 5000);
+          
         }
 
         public static bool CheckingTBsPersonnelDepartment()
@@ -171,14 +185,14 @@ namespace OOP5
 
         public static void CreateBakingDepartment()
         {
-            queue = queue + (new BakingDepartment(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, bakingPerMonth));
+            queue = queue+(new BakingDepartment(enterpriseName, workmans, paymentPerHour, bestWorker, hoursPerMonth, imposing, bakingPerMonth));
         }
 
         public static void ShowAllEnterprises()
         {
             form.tbOutput.Text = null;
             foreach (Department i in queue)
-                form.tbOutput.Text += i.ToString()+"\n";
+                form.tbOutput.Text += i.ToString() + "\n";
         }
     }
 }
