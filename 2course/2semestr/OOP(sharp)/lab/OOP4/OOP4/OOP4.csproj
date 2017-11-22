@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BakingDepartment.cs" />
+    <Compile Include="ClosedDepartment.cs" />
     <Compile Include="Component1.cs">
       <SubType>Component</SubType>
     </Compile>
