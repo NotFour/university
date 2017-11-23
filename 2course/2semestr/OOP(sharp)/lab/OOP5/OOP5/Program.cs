@@ -39,7 +39,6 @@ namespace OOP5
             System.Threading.TimerCallback timerCallback = new System.Threading.TimerCallback((object obj) => 
             {
                 queue = queue+(new PersonnelDepartment("predp" + random.Next(100), random.Next(100)));
-                ShowAllEnterprises();
             });
             System.Threading.Timer timer = new System.Threading.Timer(timerCallback, 0, 5000, 5000);
           

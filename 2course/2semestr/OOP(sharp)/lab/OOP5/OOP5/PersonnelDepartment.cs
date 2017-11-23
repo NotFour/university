@@ -60,7 +60,7 @@
 
         public override string ToString()
         {
-            return  "Объектов класса PersonnelDepartment" + objects
+            return  "Объектов класса PersonnelDepartment " + objects
             + "\r\nОрганизация: " + _enterpriseName
             + "\r\nКол-во работников: " + _workmans
             + "\r\nПлата в час: " + _paymentPerHour
